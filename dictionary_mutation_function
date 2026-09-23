@@ -1,12 +1,22 @@
 def add_entry(d):
-    d["age"] = 21
+    key = input("Enter new key: ")
+    value = input("Enter new value: ")
+    d[key] = value
+
 
 def reassign_dict(d):
-    d = {"name": "Rahul", "age": 25}
+    name = input("Enter name for new dictionary: ")
+    age = int(input("Enter age for new dictionary: "))
+    d = {"name": name, "age": age}
 
-my_dict = {"name": "Amit"}
+
+name = input("Enter your name: ")
+my_dict = {"name": name}
+
+print("Original dictionary:", my_dict)
 
 add_entry(my_dict)
 print("After add_entry:", my_dict)
+
 reassign_dict(my_dict)
 print("After reassign_dict:", my_dict)
